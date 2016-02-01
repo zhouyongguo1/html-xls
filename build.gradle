@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.poi:poi:3.12',
+            'org.jsoup:jsoup:1.8.2',
+            'org.apache.commons:commons-lang3:3.4'
+    testCompile 'junit:junit:4.+'
+}
